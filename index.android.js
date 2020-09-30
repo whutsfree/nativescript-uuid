@@ -1,7 +1,7 @@
-var platform = require('@nativescript/core/platform/platform');
+var platform = require('@nativescript/core/platform');
 
 function getUUID() {
-  return platform ? platform.device.uuid : null;
+  return platform ? platform.Device.uuid : null;
 }
 
 exports.getUUID = getUUID;
